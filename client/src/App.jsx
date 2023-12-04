@@ -40,8 +40,6 @@ export default function App() {
     <Routing/>
     </BrowserRouter>
     </UserContext.Provider>
-    //my name is gyanendra kumar bais
-    
     </>
     
   )

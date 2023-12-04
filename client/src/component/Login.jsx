@@ -50,9 +50,7 @@ export default function Login() {
                 <i className='zmdi zmdi-email'></i>
               </label>
               <input type='email' name='email' id='email' autoComplete='off' value={email} onChange={(e)=>setEmail(e.target.value)} placeholder='Your Email' />
-            </div>
-           
-           
+            </div>     
             <div className='form-group'>
               <label htmlFor='password'>
                 <i className='zmdi zmdi-lock'></i>
@@ -68,7 +66,6 @@ export default function Login() {
       </div>
       <NavLink to="/signup" className="signup-image-link">Create an account</NavLink>
     </div>
-   
   </section>
   )
 }
