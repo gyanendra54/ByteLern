@@ -66,7 +66,7 @@ export default function Contact() {
     <div className="contact_Info">
       <div className="container-fluid">
         <div className="row">
-          <div className='col-lg-10 offset-lg-1 d-flex justify-content-between'>
+          <div className='flexwalah col-lg-10 offset-lg-1 d-flex justify-content-between'>
             <div className="contact_info_item d-flex justify-content-start align-items-center">
               <img src="https://img.icons8.com/office/24/000000/iphone.png" alt="phone" />
               <div className="contact_info_content">

@@ -1,4 +1,4 @@
- /* General Styles */
+  /* General Styles */
 body {
   font-family: 'Arial', sans-serif;
   margin: 0;
@@ -91,8 +91,13 @@ body {
 
 .contact_Info {
   background-color: #f9f9f9;
-  padding: 50px 0;
-  height: 5vh;
+ padding: 20px 0;
+}
+.flexwalah{
+  margin-top: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  
 }
 
 .contact_info_item {
@@ -207,11 +212,6 @@ color: #4caf50;
   color: blue;
   font-weight: 600;
   margin-left: 2%;
-}
-.home-about{
-  margin-left: 2%;
-  margin-right: 30%;
-  
 }
 
 
@@ -395,7 +395,8 @@ color: #4caf50;
   background: rgb(17, 15, 15);
   border-radius: 6px;
 }
-
-
-
-
+@media (max-width: 463px){
+  .explore_image-container{
+    width: 80vw;
+  }
+}

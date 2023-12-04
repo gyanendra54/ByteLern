@@ -41,7 +41,6 @@ export default function Home() {
       <p className='home_para'>{show?"WELCOME!": ""}</p>
       <h1 className='head'>{show?userName: "Welcome to ByteLern - Your Gateway to Computer Science Excellence!"}</h1>
         <h5 className='home_head2'>{show ? "Happy to see you back!!!": ""}</h5>
-        <h6 className='home-about'>At ByteLern, our mission is to empower individuals passionate about computer science engineering by providing curated recommendations for the best learning resources. Whether you're diving into web development, mastering data structures and algorithms, exploring the realms of artificial intelligence and machine learning, or delving into the intricacies of computer networking, we've got you covered.</h6>
         <p className='home-exp'><NavLink to="/explore" className="signup-image-link">Click here to explore</NavLink></p>
         
       </div>
