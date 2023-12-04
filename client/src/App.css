@@ -399,4 +399,8 @@ color: #4caf50;
   .explore_image-container{
     width: 80vw;
   }
+  .signup-form {
+    width: 100%;
+    max-width: 100%;
+  }
 }
