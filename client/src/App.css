@@ -1,0 +1,401 @@
+ /* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Section Styles */
+.signup {
+  background-color: #f4f4f4;
+  padding: 80px 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Form Styles */
+.signup-content {   
+  display: flex;
+  justify-content: center;
+}
+
+.signup-form {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+.form-title {
+  color: #333;
+  text-align: center;
+}
+
+.form-group {
+  position: relative;
+  margin-bottom:10px ;
+}
+
+.form-group label {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  color: #333;
+  margin-left: -40px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-top: 3px;
+ 
+  
+}
+
+.form-button {
+  text-align: center;
+}
+
+.form-submit {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.form-submit:hover {
+  background-color: #45a049;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .signup-form {
+    width: 80%;
+  }
+}
+.nav{
+  font-weight: 640;
+  color: green;
+  margin-right: 45vw;
+}
+
+.contact_Info {
+  background-color: #f9f9f9;
+  padding: 50px 0;
+  height: 5vh;
+}
+
+.contact_info_item {
+  margin-right: 30px;
+}
+
+.contact_info_content {
+  margin-left: 15px;
+}
+
+.contact_info_title {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+.contact_info_text {
+  font-size: 14px;
+  color: #555;
+}
+
+/* Contact Form Styles */
+.contact_form {
+  background-color: #fff;
+  padding: 50px 0;
+}
+
+.contact_form_container {
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+ 
+}
+
+.contact_form_title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.contact_form_name,
+.contact_form_email,
+.contact_form_phone,
+.contact_form_message {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.contact_form_text textarea {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.contact_form_button {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.button.contact_submit_button {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .contact_info_item {
+    margin-right: 15px;
+  }
+
+  .contact_form_name,
+  .contact_form_email,
+  .contact_form_phone,
+  .contact_form_message {
+    margin-bottom: 15px;
+  }
+}
+
+
+.img2{
+  height: 90vh;
+  width: 100vw;
+}
+
+.home_para{
+  margin-top: -400px;
+  margin-left: 2vw;
+  font-weight: 700;
+  color: blueviolet;
+  font-size:xx-large
+}
+.head{
+font-weight: 700;
+margin-left: 2vw;
+margin-right: 30%;
+font-size: xxx-large;
+color: #4caf50;
+} 
+.home_head2{
+  margin-left: 2vw;
+}
+.home-exp{
+  color: blue;
+  font-weight: 600;
+  margin-left: 2%;
+}
+.home-about{
+  margin-left: 2%;
+  margin-right: 30%;
+  
+}
+
+
+/* Customize the img tag */
+.img1{
+max-width: 80%; /* Make sure the image doesn't exceed its container */
+height: auto; /* Maintain aspect ratio */
+border-radius: 50%; /* Add rounded corners */
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+transition: transform 0.3s ease-in-out; /* Add a smooth transition effect on hover */
+
+/* Additional styles can be added based on your design preferences */
+}
+
+/* Add a hover effect (e.g., zoom in) */
+
+
+
+@media (max-width: 768px) {
+.img1{
+  max-width: 50%;
+  margin-top: -8px;
+  margin-bottom: 10px;
+}
+  .container {
+  padding: 10px;
+}
+.head{
+  font-weight: 750;
+  font-size: xx-large;
+}
+.home_para{
+  font-size: x-large;
+  font-weight: 600;
+ 
+}
+
+
+.profile-img {
+  text-align: center;
+}
+
+.profile-head,
+.profile-work,
+.about-info {
+  text-align: center;
+}
+
+.profile-head h5,
+.profile-head h6,
+.profile-rating,
+.profile-work p,
+.about-info label,
+.about-info p {
+  text-align: center;
+}
+
+.nav-tabs {
+  justify-content: center;
+}
+
+.nav-link {
+  margin-right: 15px;
+}
+
+.profile-edit-btn {
+  margin-top: 15px;
+}
+}
+
+.notfound-404{
+margin: 30vh;
+justify-content: center;
+align-items: center;
+}
+
+@media (max-width: 763px){
+.notfound-404{
+  
+  margin-top: 30vh;
+  padding: 0px;
+  margin-left: 5vw;
+  margin-right: 10vw;
+}
+
+}
+.para{
+color: #4caf50;
+}
+.profile-work{
+  margin-left: 30px;
+}
+ 
+.main_explore_container {
+  margin-left: 5%;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  line-clamp: 3;
+  justify-content: start;
+  background-color: #f4f4f4;
+}
+
+
+
+.explore_image-container {
+  width: 300px;
+  height: 300px;
+  margin: 10px;
+  overflow:hidden;
+  line-clamp: 2;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+  
+
+}
+.explore_image {
+  height: 25vh;
+  width:100%;
+  
+  object-fit: cover;
+    }
+    .ex-head{
+      color: rgb(70, 70, 70);
+      font-weight: 700;
+      margin-left: 5%;
+    }
+ .ex-body{
+  background-color: #f4f4f4;
+  box-sizing: border-box;
+  
+ }
+ .scroll {
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* Limit to 3 lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+
+.ex-sub{
+  margin-top: 2%;
+ padding: 5vw;
+ font-weight: bold;
+}
+
+@media (max-width: 768px){
+  .explore_image-container{
+    width: 200px;
+  }
+}
+
+
+.aboutmeMain {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.aboutmeHeader {
+  color: #007bff; /* Set your desired color */
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.aboutmePara {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333; /* Set your desired color */
+  margin-bottom: 20px;
+}
+
+.About-button{
+  background: rgb(17, 15, 15);
+  border-radius: 6px;
+}
+
+
+
+
