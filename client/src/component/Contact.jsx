@@ -54,10 +54,10 @@ export default function Contact() {
     const data=await res.json();
     if(!data.message){
       console.log("message not send")
-      alert("plese write some message")
+      alert("please write some message")
     }
     else{
-      alert("message send");
+      alert("message sent");
       setUserData({...userData, message:""});
     }
   }
@@ -75,7 +75,6 @@ export default function Contact() {
                 </div>
                 <div className="contact_info_text">
                   9753692108
-
                 </div>
               </div>
             </div>
@@ -104,8 +103,7 @@ export default function Contact() {
           </div >
         </div>
       </div>
-    </div>
-    
+    </div> 
     <div className="contact_form">
       <div className="container">
         <div className="row">

@@ -44,7 +44,7 @@ router.post('/api/signin', async (req, res) => {
         return res.status(400).json({ error: "Please fill in all the fields" });
       }
   
-      const userLogin = await User.findOne({ email: email });
+      const userLogin = await User.findOne({email:email });
   
       if (!userLogin) {
         return res.status(400).json({ error: "Invalid Credentials" });
@@ -88,7 +88,7 @@ router.post('/api/contact',authenticate, async(req, res)=>{
       console.log("error in contact form");
       return res.json({error: "please filled the contact form"});
     }
-    const userContact =await User.findOne({email:email});
+    const userContact =await User.findOne({_id:req.UserID});
     if(userContact){
       const userMessage=await userContact.addMessage(name, email, phone, message);
       await userContact.save();

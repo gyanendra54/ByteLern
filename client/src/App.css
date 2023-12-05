@@ -403,4 +403,10 @@ color: #4caf50;
     width: 100%;
     max-width: 100%;
   }
+  .contact_form_name{
+    flex-wrap: wrap;
+  }
+  .img2{
+    height: 100vh;
+  }
 }
