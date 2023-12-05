@@ -409,4 +409,7 @@ color: #4caf50;
   .img2{
     height: 100vh;
   }
+  .home_para{
+    margin-top:-450px;
+  }
 }
