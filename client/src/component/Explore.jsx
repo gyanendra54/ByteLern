@@ -33,8 +33,8 @@ export default function Explore()  {
       console.log(error)
       if (!alertShown.current) {
         alertShown.current = true;
-        window.alert("Please register first");
-        navigate("/signup");
+        window.alert("Please login first");
+        navigate("/login");
       }
     }
   }

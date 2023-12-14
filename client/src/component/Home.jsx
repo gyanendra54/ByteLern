@@ -27,7 +27,7 @@ export default function Home() {
       
     } catch (error) {
       console.log(error)
-      navigate("/signup")
+      navigate("/login")
     }
   }
   useEffect(()=>{
@@ -39,7 +39,7 @@ export default function Home() {
       <img className='img2' src={home} alt="" />
       <div className="home-dv">
       <p className='home_para'>{show?"WELCOME!": ""}</p>
-      <h1 className='head'>{show?userName: "Welcome to ByteLern - Your Gateway to Computer Science Excellence!"}</h1>
+      <h1 className='head'>{show?userName: "Welcome to VidLern - Your Gateway to Computer Science Excellence!"}</h1>
         <h5 className='home_head2'>{show ? "Happy to see you back!!!": ""}</h5>
         <p className='home-exp'><NavLink to="/explore" className="signup-image-link">Click here to explore</NavLink></p>
         

@@ -29,7 +29,7 @@ export default function About() {
       }
     } catch (error) {
       console.log(error)
-      navigate("/signup")
+      navigate("/login")
       
     }
   }

@@ -26,7 +26,7 @@ export default function Contact() {
       }
     } catch (error) {
       console.log(error)
-      navigate("/signup")
+      navigate("/login")
     }
   }
   useEffect(()=>{
