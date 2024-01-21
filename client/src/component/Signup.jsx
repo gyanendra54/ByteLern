@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import { NavLink, useNavigate} from 'react-router-dom'
 export default function Signup() {
+  const [loading, setLoading]=useState(false)
   const [user, setUser]=useState({
     name:"", email:"", phone:"", work:"", password:"", cpassword:""
   });
@@ -15,6 +16,7 @@ export default function Signup() {
   }
   const PostData=async(e)=>{
     e.preventDefault();
+    setLoading(true)
     const {name, email, phone, work, password, cpassword}=user;
     const res = await fetch("/api/register", {
      method: 'POST',
@@ -29,6 +31,7 @@ export default function Signup() {
   if(res.status===422 || !data){
     window.alert("invalid Registration!!!");
     console.log("invalid Registration");
+    setLoading(false)
   }else{
     window.alert("login successfully")
     navigate("/login")
@@ -100,7 +103,7 @@ export default function Signup() {
               />
             </div>
             <div className='form-group form-button'>
-              <input type='submit' name='signup' id='signup' className='form-submit' value='Register' onClick={PostData} />
+              <input type='submit' name='signup' id='signup' className='form-submit' value={loading?'loading': 'Register'} onClick={PostData} />
             </div>
           </form>
         </div>

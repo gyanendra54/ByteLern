@@ -5,9 +5,10 @@ export default function Login() {
   const navigate=useNavigate();
   const [email, setEmail]=useState('');
   const [password, setPassword]=useState('');
+  const [loading, setLoading]=useState(false)
   const {state, dispatch}=useContext(UserContext);
   const UserLogin = async (e) => {
-    
+    setLoading(true)
     e.preventDefault();
     const res = await fetch('/api/signin', {
       method: 'POST',
@@ -19,10 +20,9 @@ export default function Login() {
         password,
       }),
     });
-  
+    setLoading(false)
     try {
       const data = await res.json();
-  
       if (res.status === 400 || !data) {
         window.alert('Invalid credentials');
         console.log('Bad request');
@@ -59,7 +59,7 @@ export default function Login() {
             </div>
             
             <div className='form-group form-button'>
-              <input type='submit' name='signup' id='signup' className='form-submit' value='Login' onClick={UserLogin} />
+              <input type='submit' name='login' id='signup' className='form-submit' value={loading? 'loading...':'SignIn'} onClick={UserLogin}  />
             </div>
           </form>
         </div>
