@@ -103,7 +103,7 @@ export default function Signup() {
               />
             </div>
             <div className='form-group form-button'>
-              <input type='submit' name='signup' id='signup' className='form-submit' value={loading?'loading': 'Register'} onClick={PostData} />
+              <input type='submit' name='signup' id='signup' className='form-submit' value={loading?'loading...': 'Register'} onClick={PostData} />
             </div>
           </form>
         </div>
